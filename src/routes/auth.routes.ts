@@ -88,7 +88,7 @@ authRouter.post("/login", async (req, res) => {
       res
         .status(200)
         .cookie("token", token, options)
-        .json({ success: true, token,userName });
+        .json({ success: true, token,user:userName });
 
         console.log(req.cookies)
     } else {
